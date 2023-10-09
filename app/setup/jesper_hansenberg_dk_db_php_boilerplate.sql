@@ -39,8 +39,9 @@ CREATE TABLE `channels` (
 --
 
 INSERT INTO `channels` (`channel_id`, `name`, `description`, `created_at`) VALUES
-(1, 'WorldNews', 'A place for major news from around the world, excluding US-internal news.', '0000-00-00 00:00:00'),
-(2, 'Denmark ', 'A forum for discussions, funny tidbits and news about Denmark and the Danes. This forum is mainly in Danish, but posts in other Scandinavian languages and English are welcome too.', '2023-07-29 11:38:27');
+(1, 'Airsoft hjælp', 'A place to ask about everything regarding airsoft', '2023-07-29 11:38:27'),
+(2, 'Airsoft salg', 'A place to sell airsoft equipment ONLY 18+', '2023-07-29 11:38:27');
+(3, 'Airsoft baner', 'A place to see where the fiels are and write to them', '2023-07-29 11:38:27')
 
 -- --------------------------------------------------------
 
