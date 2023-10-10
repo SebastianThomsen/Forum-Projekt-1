@@ -1,0 +1,114 @@
+/* Tilføj styling til containeren for at centrere indholdet */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tilføj styling til jumbotronen */
+.jumbotron {
+    margin: 0 auto; /* Centrer jumbotron vandret i containeren */
+    margin-bottom: 5rem;
+}
+
+/* Tilføj styling til overskriften */
+.header h1 {
+    margin: 30px auto; /* Centrer overskriften vandret og tilføj afstand nedad */
+    text-align: center; /* Centrer tekst */
+    font-weight: bold; /* Gør teksten fed */
+
+}
+
+/* Tilføj styling til "Create Post" knappen */
+.create-post-btn {
+    margin: 0px 0; /* Tilføj afstand over knappen */
+    margin-right: 500px;
+    margin-bottom: 50px;
+    border-radius: 0; /* Fjern afrundede kanter */
+    background-color: #0D4D6D; /* Ændr baggrundsfarven */
+    color: white; /* Ændr tekstfarven til hvid */
+    font-weight: bold; /* Gør teksten fed */
+    padding: 4px 14px; /* Tilføj indrykning (polstring) til knappen */
+
+    /* Tilføj en overgangseffekt for glidende farveskift */
+    transition: background-color 0.3s;
+}
+
+/* Når musen holdes over knappen */
+.create-post-btn:hover {
+    background-color: rgba(13, 77, 109, 0.43); /* Ændr baggrundsfarven ved hover */
+}
+
+/* Fjern fokusrammen (blå streg) */
+.create-post-btn:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+/* Fjern fokusrammen (blå streg) fra links */
+a:focus {
+    outline: none !important;
+}
+
+/* Tilføj styling til forfatterkassen */
+.author-box {
+    background-color: #0D4D6D; /* Baggrundsfarve */
+    color: white; /* Tekstfarve */
+    padding: 10px; /* Tilføj indrykning (polstring) */
+    border-radius: 5px; /* Afrundede kanter for kassen */
+    margin-top: 10px; /* Afstand til posten over */
+}
+
+
+/* Tilføj styling til kortet og andre elementer efter behov */
+.card {
+    margin-bottom: 50px; /* Tilføj en mindre margen mellem postelementerne */
+    border: none; /* Fjern kanten (border) */
+
+}
+
+.card-body {
+    /* Tilpas kortets indholdsstyling her */
+}
+
+.card-title {
+    color: black; /* Ændr tekstfarven til sort */
+
+}
+
+.card-text {
+    background-color: rgba(0, 0, 0, 0.06); /* Baggrundsfarve med 6% opacitet */
+    padding: 10px; /* Tilføj indrykning (polstring) */
+    border-radius: none; /* Afrundede kanter */
+    margin-top: 10px; /* Afstand til overskriften over */
+    color: black; /* Ændr tekstfarven til sort */
+
+    /* Fjern faste højde og bredde, og brug auto-højde og -bredde */
+
+
+}
+
+/* Tilføj styling til "Vis Indlæg" knappen */
+.btn-primary {
+    border-radius: 0; /* Fjern afrundede kanter */
+    background-color: #0D4D6D; /* Ændr baggrundsfarven */
+    color: white; /* Ændr tekstfarven til hvid */
+    font-weight: bold; /* Gør teksten fed */
+    padding: 4px 14px; /* Tilføj indrykning (polstring) til knappen */
+
+    /* Tilføj en overgangseffekt for glidende farveskift */
+    transition: background-color 0.3s;
+}
+
+/* Når musen holdes over knappen */
+.btn-primary:hover {
+    background-color: rgba(13, 77, 109, 0.43); /* Ændr baggrundsfarven ved hover */
+}
+
+.btn {
+    /* Tilpas knappens styling her */
+}
+
+.alert {
+    /* Tilpas advarselsboksen styling her */
+}

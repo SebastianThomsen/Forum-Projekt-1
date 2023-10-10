@@ -1,25 +1,32 @@
-<div class="container">
-    <div class="row">
-        <div class="jumbotron text-center" style="margin-bottom:0">
-            <h1>Posts Overview in the <?php echo $channel->name; ?> channel</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="poststyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="posts-container"> <!-- Fjern jumbotron klassen -->
+                <div class="header">
+                    <h1><?php echo $channel->name; ?> KANALEN</h1>
+                    <a href="create-post.php?channel_id=<?php echo $channel_id; ?>" class="btn btn-primary create-post-btn">Create post</a>
+                </div>
 
-            <?php
-            echo '<a href="create-post.php?channel_id=' . $channel_id . '" class="btn btn-primary">Create Post</a>';
-
-            if ($posts->count()) {
-                foreach ($posts->results() as $p) {
-                    echo '<div class="card">';
-                    echo '<div class="card-body">';
-                    echo '<h4 class="card-title">' . $p->title . '</h4>';
-                    echo '<p class="card-text">' . $p->content . '</p>';
-                    echo '<a href="comments.php?post_id=' . $p->post_id . '" class="btn btn-primary">View Post</a>';
-                    echo '</div>';
-                    echo '</div>';
-                }
-            } else {
-                echo '<div class="alert alert-danger"><strong></strong>No posts found!</div>';
-            }
-            ?>
+                <?php if ($posts->count()) : ?>
+                    <?php foreach ($posts->results() as $p) : ?>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $p->title; ?></h4>
+                                <p class="card-text"><?php echo $p->content; ?></p>
+                                <a href="comments.php?post_id=<?php echo $p->post_id; ?>" class="btn btn-primary">Vis Indlæg</a>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else : ?>
+                    <div class="alert alert-danger"><strong>Ingen indlæg fundet!</strong></div>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
-</div>
+</body>
+</html>

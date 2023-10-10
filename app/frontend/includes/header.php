@@ -11,6 +11,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link til CSS-filen -->
+
+
   <style>
     .fakeimg {
       height: 200px;
