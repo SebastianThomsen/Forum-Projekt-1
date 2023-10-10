@@ -38,11 +38,11 @@ CREATE TABLE `channels` (
 -- Dumping data for table `channels`
 --
 
-INSERT INTO `channels` (`channel_id`, `name`, `description`, `created_at`) VALUES
-(1, 'Airsoft', 'A place to talk about everything evolving airsoft', '0000-00-00 00:00:00'),
-(2, 'Airsoft hjælp', 'A place to ask about everything regarding airsoft', '2023-07-29 11:38:27'),
-(3, 'Airsoft salg', 'A place to sell airsoft equipment ONLY 18+', '2023-07-29 11:38:27'),
-(4, 'Airsoft baner', 'A place to see where the fiels are and write to them', '2023-07-29 11:38:27');
+INSERT INTO `channels` (`channel_id`, `name`, `created_at`) VALUES
+(1, 'AIRSOFT', '0000-00-00 00:00:00'),
+(2, 'AIRSOFT HJÆLP', '2023-07-29 11:38:27'),
+(3, 'AIRSOFT SALG', '2023-07-29 11:38:27'),
+(4, 'AIRSOFT BANER', '2023-07-29 11:38:27');
 
 -- --------------------------------------------------------
 

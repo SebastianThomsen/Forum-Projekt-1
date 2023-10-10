@@ -2,7 +2,7 @@
 
 <!-- Første navigationslinje (vises altid) -->
 <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #0D4D6D; height: 30px;">
-  <a class="navbar-brand" href="index.php" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 13px;">AIRSOFT FORUM</a>
+  <a class= "navbar-brand" href="index.php" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 13px; padding: 9px; ">AIRSOFT FORUM</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
