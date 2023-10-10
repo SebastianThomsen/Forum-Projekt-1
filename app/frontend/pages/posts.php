@@ -18,7 +18,7 @@
                             <div class="card-body">
                                 <h4 class="card-title"><?php echo $p->title; ?></h4>
                                 <p class="card-text"><?php echo $p->content; ?></p>
-                                <a href="comments.php?post_id=<?php echo $p->post_id; ?>" class="btn btn-primary">Vis Indlæg</a>
+                                <a href="comments.php?post_id=<?php echo $p->post_id; ?>" class="btn btn-primary">Comment</a>
                             </div>
                         </div>
                     <?php endforeach; ?>
