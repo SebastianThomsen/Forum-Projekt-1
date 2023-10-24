@@ -40,9 +40,9 @@ CREATE TABLE `channels` (
 
 INSERT INTO `channels` (`channel_id`, `name`, `created_at`) VALUES
 (1, 'AIRSOFT', '0000-00-00 00:00:00'),
-(2, 'AIRSOFT HJÆLP', '2023-07-29 11:38:27'),
-(3, 'AIRSOFT SALG', '2023-07-29 11:38:27'),
-(4, 'AIRSOFT BANER', '2023-07-29 11:38:27');
+(2, 'AIRSOFT HELP', '2023-07-29 11:38:27'),
+(3, 'AIRSOFT SALES', '2023-07-29 11:38:27'),
+(4, 'AIRSOFT FIELDS', '2023-07-29 11:38:27');
 
 -- --------------------------------------------------------
 
@@ -147,11 +147,11 @@ CREATE TABLE `indlæg` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `posts` (`post_id`, `user_id`, `channel_id`, `title`, `content`) VALUES
-(1, 1, 1, 'Første indlæg', 'Dette er det første indlæg.'),
-(2, 2, 1, 'Endnu et indlæg', 'Dette er et andet indlæg.'),
-(3, 1, 2, 'Hjælp mig!', 'Jeg har brug for hjælp med noget.'),
-(4, 3, 3, 'Salgsemne', 'Jeg har noget til salg.'),
-(5, 2, 4, 'Baneinformation', 'Her er information om vores bane.');
+(1, 1, 1, 'First post', 'This is the first post.'),
+(2, 2, 1, 'Another Post', 'This is the second post.'),
+(3, 1, 2, 'Help me!', 'I need help with something.'),
+(4, 3, 3, 'Sales subject', 'I have somthing for sale.'),
+(5, 2, 4, 'Field information', 'Here is some information about the fiels.');
 
 --
 -- Table structure for table `votes`
