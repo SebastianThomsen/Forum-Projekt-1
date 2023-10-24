@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 function hentAlleIndlæg() {
     global $conn; // Gør forbindelsen tilgængelig inde i funktionen
 
-    $query = "SELECT * FROM indlæg"; // Erstat "indlæg" med navnet på din indlægstabel
+    $query = "SELECT * FROM indlæg"; 
 
     $resultat = $conn->query($query);
 

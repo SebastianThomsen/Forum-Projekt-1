@@ -146,6 +146,13 @@ CREATE TABLE `indlæg` (
   KEY `channel_id` (`channel_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO `posts` (`post_id`, `user_id`, `channel_id`, `title`, `content`) VALUES
+(1, 1, 1, 'Første indlæg', 'Dette er det første indlæg.'),
+(2, 2, 1, 'Endnu et indlæg', 'Dette er et andet indlæg.'),
+(3, 1, 2, 'Hjælp mig!', 'Jeg har brug for hjælp med noget.'),
+(4, 3, 3, 'Salgsemne', 'Jeg har noget til salg.'),
+(5, 2, 4, 'Baneinformation', 'Her er information om vores bane.');
+
 --
 -- Table structure for table `votes`
 --
