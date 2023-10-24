@@ -131,6 +131,20 @@ CREATE TABLE `users_session` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
+-- Table structure for table `indlæg`
+--
+
+CREATE TABLE `indlæg` (
+  `indlæg_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `channel_id` int(11) NOT NULL,
+  `titel` varchar(255) NOT NULL,
+  `indhold` text NOT NULL,
+  `oprettelsesdato` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`indlæg_id`),
+  KEY `user_id` (`user_id`),
+  KEY `channel_id` (`channel_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Table structure for table `votes`
@@ -277,3 +291,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+

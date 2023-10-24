@@ -1,0 +1,79 @@
+/* Stil for container */
+.container {
+    padding: 20px;
+}
+
+/* Stil for rækker */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Stil for jumbotron */
+.jumbotron {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+/* Stil for posttitel */
+.jumbotron h1 {
+    font-size: 24px;
+}
+
+/* Stil for sektionsoverskrift */
+.jumbotron h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Stil for "Create a comment" knap */
+.btn-primary {
+    margin-top: 10px;
+    background-color: #0D4D6D;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+/* Når musen holdes over knappen */
+.btn-primary:hover {
+    background-color: rgba(13, 77, 109, 0.43); /* Ændr baggrundsfarven ved hover */
+}
+
+/* Stil for kommentarkort */
+.card {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stil for kommentarbruger */
+.card-title {
+    color: #0D4D6D;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Stil for kommentarindhold */
+.card-text {
+    color: black;
+    font-size: 16px;
+}
+
+/* Stil for kommentartidspunkt */
+.card-text:last-child {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Stil for advarselmeddelelse */
+.alert {
+    margin-top: 10px;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 5px;
+    color: #a94442;
+    padding: 10px;
+}

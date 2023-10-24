@@ -54,3 +54,7 @@ a {
     border-radius: 0 !important;
 }
 
+.jumbotron {
+    background-color: transparent !important ; /* Gør baggrunden transparent */
+    border: none !important; /* Fjern eventuelle kanter/border */
+}
