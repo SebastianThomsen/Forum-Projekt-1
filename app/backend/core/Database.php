@@ -23,6 +23,7 @@ class Database
         {
             die($e->getMessage());
         }
+        $this->_pdo->query("SET NAMES utf8");
     }
 
     public static function getInstance()
@@ -79,6 +80,7 @@ class Database
             if (in_array($operator, $operators))
             {
                 $sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+
 
                 if (!$this->query($sql, array($value))->error())
                 {

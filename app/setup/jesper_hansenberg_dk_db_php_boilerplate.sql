@@ -144,7 +144,7 @@ CREATE TABLE `indlæg` (
   PRIMARY KEY (`indlæg_id`),
   KEY `user_id` (`user_id`),
   KEY `channel_id` (`channel_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `posts` (`post_id`, `user_id`, `channel_id`, `title`, `content`) VALUES
 (1, 1, 1, 'Første indlæg', 'Dette er det første indlæg.'),
