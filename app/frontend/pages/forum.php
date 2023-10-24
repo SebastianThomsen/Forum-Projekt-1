@@ -2,7 +2,7 @@
     <div class="row">
         <div class="jumbotron text-center" style="margin-bottom:0">
             <h1>Channel Overview</h1>
-            <p>Her kan du se alle kanalerne.</p>
+            <p>All the channels are visible here!</p>
 
             <?php
             if ($channels->count()) {

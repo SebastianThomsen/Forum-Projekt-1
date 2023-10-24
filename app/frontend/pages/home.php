@@ -43,8 +43,8 @@ function hentAlleIndlæg() {
         <div class="row">
             <div id="posts-container">
                 <div class="header">
-                    <h1>Bedste Airsoft forum der ude!</h1>
-                    <p>Her kan du se alle indlæg der er blevet postet</p>
+                    <h1>The Best Airsoft Out There!</h1>
+                    <p>All posts will visible here</p>
                     <p></p>
                 </div>
 
@@ -65,7 +65,7 @@ function hentAlleIndlæg() {
                     endforeach;
                 else :
                 ?>
-                    <div class="alert alert-danger"><strong>Ingen indlæg fundet!</strong></div>
+                    <div class="alert alert-danger"><strong>No posts were found!</strong></div>
                 <?php endif;
                 ?>
             </div>
