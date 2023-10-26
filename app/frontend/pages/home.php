@@ -15,6 +15,9 @@ if ($conn->connect_error) {
 function hentAlleIndlæg() {
     global $conn; // Gør forbindelsen tilgængelig inde i funktionen
 
+    // Set the character set to handle special characters
+    $conn->set_charset("utf8");
+
     $query = "SELECT * FROM indlæg"; 
 
     $resultat = $conn->query($query);
